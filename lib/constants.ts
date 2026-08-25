@@ -52,8 +52,7 @@ export const PHOTOS = {
   ],
 };
 
-export const AUDIO_SRC =
-  "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3";
+export const AUDIO_SRC = "/cancion.mp3";
 
 export const reveal = {
   initial: { opacity: 0, y: 50 },
