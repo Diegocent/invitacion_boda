@@ -42,12 +42,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_ES",
     siteName: "Ilse y Jose",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 800,
+        height: 800,
+        alt: "Ilse y Jose",
+        type: "image/jpeg",
+      },
+    ],
   },
   twitter: {
     card: "summary",
     title: "Ilse y Jose",
     description:
       "Queremos que seas parte de nuestra boda. Accedé a la invitación completa y confirmá tu asistencia.",
+    images: ["/og.jpg"],
   },
 };
 
