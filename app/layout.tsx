@@ -21,9 +21,34 @@ const inter = Inter({
   display: "swap",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+  ? process.env.NEXT_PUBLIC_SITE_URL
+  : process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "http://localhost:3000";
+
 export const metadata: Metadata = {
-  title: "Ilse y Jose — Nos casamos",
-  description: "Invitación de boda de Ilse y Jose. 24 de octubre de 2026.",
+  metadataBase: new URL(siteUrl),
+  title: "Ilse y Jose",
+  description:
+    "Queremos que seas parte de nuestra boda. Accedé a la invitación completa y confirmá tu asistencia.",
+  applicationName: "Ilse y Jose",
+  openGraph: {
+    title: "Ilse y Jose",
+    description:
+      "Queremos que seas parte de nuestra boda. Accedé a la invitación completa y confirmá tu asistencia.",
+    type: "website",
+    locale: "es_ES",
+    siteName: "Ilse y Jose",
+  },
+  twitter: {
+    card: "summary",
+    title: "Ilse y Jose",
+    description:
+      "Queremos que seas parte de nuestra boda. Accedé a la invitación completa y confirmá tu asistencia.",
+  },
 };
 
 export default function RootLayout({
