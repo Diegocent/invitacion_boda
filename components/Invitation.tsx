@@ -412,8 +412,7 @@ function GiftSection() {
         <h2 className="font-serif text-5xl text-white">Regalo</h2>
         <Gift className="mx-auto mt-6 h-10 w-10 text-[#FAFAF8]" strokeWidth={1.3} />
         <p className="mx-auto mt-5 max-w-sm font-sans text-sm leading-relaxed tracking-wide text-[#FAFAF8]">
-          Nuestro mejor regalo es que estén con nosotros en nuestro día. Si
-          quieren hacernos un obsequio, pueden elegir algo de la lista y marcar
+          Si quieren hacernos un obsequio, pueden elegir algo de la lista y marcar
           el check para que los demás sepan que ya está cubierto.
         </p>
         <OutLink
